@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Kopi Lentera — Kedai Kopi & Roti Rumahan di Sleman (Demo)",
+    "description": "Kopi susu gula aren, roti panggang segar, dan camilan rumahan yang dibuat tiap pagi. Pesan lewat WhatsApp, ambil sendiri atau diantar. Situs demo dengan data fiktif.",
+    "url": "",
+    "ogImage": "",
+    "lang": "id",
+    "noindex": true,
+    "demoNotice": "Semua nama, harga, angka, alamat, dan ulasan di halaman ini fiktif — hanya contoh tampilan."
+  },
+  "business": {
+    "name": "Kopi Lentera",
+    "legalName": "Kopi Lentera (usaha fiktif)",
+    "tagline": "Kedai kopi & roti rumahan",
+    "logo": "",
+    "hideName": false,
+    "schemaType": "CafeOrCoffeeShop"
+  },
+  "theme": {
+    "primary": "#b8451f",
+    "accent": "#efb949",
+    "background": "#fbf6ee",
+    "text": "#2a1d15",
+    "fonts": "hangat",
+    "radius": "bulat"
+  },
+  "whatsapp": {
+    "number": "620000000000",
+    "message": "Halo {bisnis}, saya mau pesan. Boleh minta info menu hari ini?",
+    "productMessage": "Halo {bisnis}, saya mau pesan *{produk}* ({harga}). Apakah masih tersedia?",
+    "floating": true,
+    "floatingLabel": "Chat WhatsApp"
+  },
+  "announcement": {
+    "enabled": true,
+    "text": "Promo pembukaan: *gratis 1 cookies* tiap beli 2 minuman — sampai akhir bulan",
+    "href": "#produk"
+  },
+  "nav": {
+    "cta": { "label": "Pesan Sekarang", "href": "whatsapp" }
+  },
+  "sections": [
+    { "id": "hero", "enabled": true },
+    { "id": "trust", "enabled": true },
+    { "id": "about", "enabled": true },
+    { "id": "products", "enabled": true },
+    { "id": "benefits", "enabled": true },
+    { "id": "gallery", "enabled": true },
+    { "id": "testimonials", "enabled": true },
+    { "id": "faq", "enabled": true },
+    { "id": "location", "enabled": true },
+    { "id": "contact", "enabled": true }
+  ],
+  "hero": {
+    "navLabel": "",
+    "layout": "split",
+    "imageShape": "lengkung",
+    "eyebrow": "Kedai kopi & roti rumahan · Sleman",
+    "title": "Ngopi enak nggak harus *jauh-jauh.*",
+    "subtitle": "Kopi susu gula aren, roti panggang segar, dan camilan rumahan — dibuat tiap pagi di dapur kecil kami. Pesan lewat WhatsApp, ambil sendiri atau kami antar.",
+    "primaryCta": { "label": "Pesan via WhatsApp", "href": "whatsapp" },
+    "secondaryCta": { "label": "Lihat Menu", "href": "#produk" },
+    "rating": 5,
+    "note": "4,9 dari 300+ ulasan pelanggan (contoh)",
+    "image": "images/hero.svg",
+    "imageAlt": "Secangkir cappuccino dengan latte art, croissant, dan es kopi susu di atas meja",
+    "badges": [
+      { "icon": "clock", "title": "Buka setiap hari", "text": "07.00 – 21.00 WIB" },
+      { "icon": "truck", "title": "Gratis antar", "text": "Radius 3 km dari kedai" }
+    ],
+    "sticker": "Dipanggang tiap pagi • Diseduh segar •",
+    "stickerIcon": "coffee"
+  },
+  "trust": {
+    "navLabel": "",
+    "items": [
+      { "value": "5 tahun", "label": "Menemani pagi warga Sleman" },
+      { "value": "12.000+", "label": "Cangkir tersaji sejak buka" },
+      { "value": "4,9 / 5", "label": "Rata-rata penilaian pelanggan" },
+      { "value": "30 menit", "label": "Rata-rata pesanan antar tiba" }
+    ],
+    "note": "Angka di atas adalah contoh untuk keperluan demo."
+  },
+  "about": {
+    "navLabel": "Tentang",
+    "eyebrow": "Tentang kami",
+    "title": "Dari dapur kecil, untuk *tetangga sendiri.*",
+    "text": "Kopi Lentera berawal dari garasi rumah dan satu mesin espresso bekas. Kami percaya kopi enak tidak perlu rumit atau mahal: biji lokal yang disangrai segar, susu dari peternak sekitar, dan roti yang dipanggang sebelum matahari terbit.",
+    "points": [
+      "Biji kopi lokal dari Temanggung & Gayo, disangrai tiap minggu",
+      "Roti dan kue dipanggang setiap pagi, *tanpa pengawet*",
+      "Harga jujur — yang tertulis di menu, itu yang Anda bayar"
+    ],
+    "image": "images/about.svg",
+    "imageAlt": "Tampak depan kedai Kopi Lentera",
+    "image2": "images/about-2.svg",
+    "image2Alt": "Kemasan biji kopi dan cangkir",
+    "badgeValue": "2020",
+    "badgeLabel": "Berdiri sejak",
+    "ownerName": "Rina Wulandari",
+    "ownerRole": "Pemilik & peracik kopi (tokoh fiktif)",
+    "cta": { "label": "Lihat lokasi kedai", "href": "#lokasi" }
+  },
+  "products": {
+    "navLabel": "Menu",
+    "eyebrow": "Menu favorit",
+    "title": "Yang paling sering *dipesan ulang.*",
+    "subtitle": "Semua dibuat saat dipesan. Ketuk tombol Pesan — kami langsung balas lewat WhatsApp.",
+    "layout": "kartu",
+    "showFilter": true,
+    "allLabel": "Semua",
+    "showButton": true,
+    "buttonLabel": "Pesan",
+    "items": [
+      { "name": "Es Kopi Susu Lentera", "category": "Kopi", "description": "Espresso house blend, susu segar, dan gula aren asli. Manisnya pas, kopinya tetap terasa.", "price": 18000, "oldPrice": "", "unit": "", "badge": "Terlaris", "image": "images/produk-kopi-susu.svg" },
+      { "name": "Cappuccino Hangat", "category": "Kopi", "description": "Foam tebal nan lembut di atas double shot espresso. Teman terbaik untuk memulai pagi.", "price": 22000, "oldPrice": "", "unit": "", "badge": "", "image": "images/produk-cappuccino.svg" },
+      { "name": "Matcha Latte", "category": "Non-Kopi", "description": "Matcha murni dikocok dengan susu segar. Creamy, sedikit pahit, tidak bikin enek.", "price": 24000, "oldPrice": "", "unit": "", "badge": "Baru", "image": "images/produk-matcha.svg" },
+      { "name": "Croissant Mentega", "category": "Roti & Kue", "description": "Renyah di luar, berlapis lembut di dalam. Dipanggang pukul 6 pagi, biasanya habis sebelum siang.", "price": 17000, "oldPrice": "", "unit": "", "badge": "", "image": "images/produk-croissant.svg" },
+      { "name": "Cookies Cokelat", "category": "Roti & Kue", "description": "Cookies tebal dengan potongan cokelat hitam dan sedikit garam laut. Lembut di tengah.", "price": 15000, "oldPrice": "", "unit": "/ 3 keping", "badge": "", "image": "images/produk-cookies.svg" },
+      { "name": "Kopi Susu Literan", "category": "Kopi", "description": "Es kopi susu favorit dalam botol 1 liter. Tahan 3 hari di kulkas — cukup untuk 5 gelas.", "price": 75000, "oldPrice": 85000, "unit": "/ 1 liter", "badge": "Hemat", "image": "images/produk-literan.svg" }
+    ],
+    "note": "Belum menemukan yang dicari? Kami juga menerima pesanan snack box dan kopi untuk acara.",
+    "cta": { "label": "Tanya menu lengkap", "href": "whatsapp:Halo {bisnis}, boleh minta daftar menu lengkapnya?" }
+  },
+  "benefits": {
+    "navLabel": "Keunggulan",
+    "eyebrow": "Kenapa Kopi Lentera",
+    "title": "Alasan pelanggan *kembali lagi.*",
+    "subtitle": "Bukan sekadar kopi enak. Kami ingin setiap pesanan terasa mudah, dari chat pertama sampai tegukan terakhir.",
+    "items": [
+      { "icon": "leaf", "title": "Bahan segar & lokal", "text": "Biji kopi dari petani Jawa dan Sumatra, susu segar dari peternak sekitar." },
+      { "icon": "clock", "title": "Dibuat saat dipesan", "text": "Tidak ada stok kemarin. Minuman diseduh dan roti dipanggang di hari yang sama." },
+      { "icon": "truck", "title": "Gratis antar 3 km", "text": "Pesan dari rumah atau kantor, kami antar tanpa biaya tambahan di sekitar kedai." },
+      { "icon": "wallet", "title": "Harga bersahabat", "text": "Mulai Rp 15.000. Bayar tunai, QRIS, atau transfer — mana saja yang paling mudah." },
+      { "icon": "message", "title": "Balas chat cepat", "text": "Admin kami aktif selama jam buka. Rata-rata pesan dibalas dalam beberapa menit." },
+      { "icon": "gift", "title": "Bisa untuk acara", "text": "Snack box, kopi literan, hingga coffee cart untuk rapat, arisan, dan syukuran." }
+    ]
+  },
+  "gallery": {
+    "navLabel": "Galeri",
+    "eyebrow": "Galeri",
+    "title": "Sekilas suasana *di kedai.*",
+    "subtitle": "",
+    "items": [
+      { "image": "images/galeri-1.svg", "caption": "Meja pagi: cappuccino, es kopi, dan croissant" },
+      { "image": "images/galeri-2.svg", "caption": "Biji kopi house blend, disangrai tiap minggu" },
+      { "image": "images/galeri-3.svg", "caption": "Donat gula & glasir, tersedia akhir pekan" },
+      { "image": "images/galeri-4.svg", "caption": "Seduh manual V60 untuk pencinta kopi hitam" },
+      { "image": "images/galeri-5.svg", "caption": "Pojok rak: biji kopi, cangkir, dan tanaman" },
+      { "image": "images/galeri-6.svg", "caption": "Trio minuman dingin favorit" }
+    ],
+    "cta": { "label": "Lihat lebih banyak di Instagram", "href": "https://example.com/instagram-kopilentera" }
+  },
+  "testimonials": {
+    "navLabel": "Testimoni",
+    "eyebrow": "Kata pelanggan",
+    "title": "Diceritakan dari *mulut ke mulut.*",
+    "subtitle": "",
+    "ratingValue": "4,9",
+    "ratingLabel": "dari 300+ ulasan (contoh)",
+    "items": [
+      { "quote": "Kopi susunya nagih, manisnya pas dan nggak bikin eneg. Sekarang tiap Jumat satu kantor *titip pesan* ke saya.", "name": "Dimas P.", "role": "Karyawan, pelanggan sejak 2022", "rating": 5 },
+      { "quote": "Pesan snack box 40 pack untuk arisan, dibalasnya cepat dan diantar tepat waktu. Croissant-nya masih hangat waktu sampai.", "name": "Ibu Ratna", "role": "Pesan untuk acara keluarga", "rating": 5 },
+      { "quote": "Tempatnya kecil tapi nyaman buat nugas. Wifi lancar, colokan banyak, dan harga ramah di kantong mahasiswa.", "name": "Salsa A.", "role": "Mahasiswi", "rating": 5 }
+    ],
+    "note": "Ulasan di atas adalah contoh fiktif untuk keperluan demo."
+  },
+  "faq": {
+    "navLabel": "FAQ",
+    "eyebrow": "Pertanyaan umum",
+    "title": "Yang sering *ditanyakan.*",
+    "subtitle": "Tidak menemukan jawabannya? Chat saja, kami senang membantu.",
+    "helpTitle": "Masih ada pertanyaan?",
+    "helpText": "Admin kami membalas setiap hari pukul 07.00 – 21.00 WIB.",
+    "cta": { "label": "Tanya via WhatsApp", "href": "whatsapp:Halo {bisnis}, saya mau tanya." },
+    "items": [
+      { "q": "Bagaimana cara memesan?", "a": "Ketuk tombol *Pesan* pada menu yang Anda inginkan atau tombol WhatsApp di halaman ini. Tulis pesanan dan alamat Anda, lalu admin kami akan mengonfirmasi total dan estimasi waktu." },
+      { "q": "Apakah bisa diantar? Berapa ongkirnya?", "a": "Bisa. Gratis ongkir untuk radius 3 km dari kedai. Di luar itu kami bantu pesankan kurir instan dengan ongkir sesuai aplikasi." },
+      { "q": "Metode pembayaran apa saja yang diterima?", "a": "Tunai, QRIS (semua e-wallet dan m-banking), serta transfer bank. Pembayaran dilakukan setelah pesanan dikonfirmasi." },
+      { "q": "Bisa pesan dalam jumlah banyak untuk acara?", "a": "Tentu. Kami menerima snack box, kopi literan, dan coffee cart. Mohon pesan minimal H-2 agar kami bisa menyiapkan bahan." },
+      { "q": "Apakah ada menu tanpa kopi atau rendah gula?", "a": "Ada. Matcha latte, cokelat, dan teh tersedia setiap hari. Tingkat manis semua minuman bisa diatur: normal, sedikit, atau tanpa gula." }
+    ]
+  },
+  "location": {
+    "navLabel": "Lokasi",
+    "eyebrow": "Lokasi & jam buka",
+    "title": "Mampir, kami *tunggu di kedai.*",
+    "subtitle": "",
+    "addressLabel": "Alamat",
+    "address": "Jl. Contoh Raya No. 12, Kel. Demo\nSleman, D.I. Yogyakarta 55000",
+    "addressNote": "Alamat fiktif. Parkir motor & mobil tersedia di depan kedai.",
+    "hoursLabel": "Jam buka",
+    "hours": [
+      { "days": "Senin – Jumat", "time": "07.00 – 21.00" },
+      { "days": "Sabtu – Minggu", "time": "08.00 – 22.00" },
+      { "days": "Hari libur nasional", "time": "09.00 – 20.00" }
+    ],
+    "hoursNote": "",
+    "showMap": true,
+    "mapQuery": "Tugu Yogyakarta",
+    "mapEmbedUrl": "",
+    "mapsUrl": "",
+    "mapButtonLabel": "Tampilkan peta",
+    "cta": { "label": "Petunjuk arah", "href": "maps" },
+    "secondaryCta": { "label": "Telepon kedai", "href": "tel" }
+  },
+  "contact": {
+    "navLabel": "Kontak",
+    "eyebrow": "Pesan sekarang",
+    "title": "Lapar atau butuh kopi? *Chat saja.*",
+    "subtitle": "Kirim pesanan lewat WhatsApp — kami konfirmasi dalam beberapa menit selama jam buka.",
+    "cta": { "label": "Chat WhatsApp Sekarang", "href": "whatsapp" },
+    "phone": "0000-0000-0000",
+    "email": "halo@kopilentera.example",
+    "channels": [
+      { "type": "telepon", "label": "0000-0000-0000", "url": "" },
+      { "type": "instagram", "label": "@kopilentera.demo", "url": "https://example.com/instagram-kopilentera" },
+      { "type": "tiktok", "label": "@kopilentera.demo", "url": "https://example.com/tiktok-kopilentera" },
+      { "type": "email", "label": "halo@kopilentera.example", "url": "" }
+    ],
+    "form": {
+      "enabled": true,
+      "title": "Pesan cepat",
+      "intro": "Halo {bisnis}, saya ingin memesan.",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama Anda",
+      "optionLabel": "Keperluan",
+      "options": ["Pesan untuk diantar", "Pesan untuk diambil", "Snack box / acara", "Pertanyaan lain"],
+      "messageLabel": "Pesanan / pertanyaan",
+      "messagePlaceholder": "Contoh: 2 es kopi susu, 1 croissant. Diantar ke…",
+      "submitLabel": "Kirim via WhatsApp",
+      "note": "Form ini membuka WhatsApp dengan pesan yang sudah terisi."
+    }
+  },
+  "footer": {
+    "text": "Kedai kopi & roti rumahan. Diseduh segar, dipanggang tiap pagi, diantar dengan senang hati.",
+    "menuLabel": "Jelajahi",
+    "visitLabel": "Kunjungi",
+    "links": [],
+    "copyright": "Situs demo, bukan usaha sungguhan.",
+    "credit": "",
+    "creditUrl": ""
+  }
+}

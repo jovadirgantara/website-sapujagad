@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "title": "Garis Rapi Barbershop — Pangkas Rambut Pria di Bandung (Demo)",
+    "description": "Barbershop pria dengan kapster berpengalaman. Potong rapi, cukur bersih, tanpa antre lama — booking lewat WhatsApp. Situs demo dengan data fiktif.",
+    "url": "",
+    "ogImage": "",
+    "lang": "id",
+    "noindex": true,
+    "demoNotice": "Semua nama, harga, angka, alamat, dan ulasan di halaman ini fiktif — hanya contoh tampilan."
+  },
+  "business": {
+    "name": "Garis Rapi",
+    "legalName": "Garis Rapi Barbershop (usaha fiktif)",
+    "tagline": "Barbershop pria",
+    "logo": "",
+    "hideName": false,
+    "schemaType": "HairSalon"
+  },
+  "theme": {
+    "primary": "#d9a441",
+    "accent": "#c2452d",
+    "background": "#151413",
+    "text": "#f3efe8",
+    "fonts": "tegas",
+    "radius": "tegas"
+  },
+  "whatsapp": {
+    "number": "620000000000",
+    "message": "Halo {bisnis}, saya mau booking potong rambut. Jadwal yang kosong kapan ya?",
+    "productMessage": "Halo {bisnis}, saya mau booking *{produk}* ({harga}). Jadwal yang kosong kapan ya?",
+    "floating": true,
+    "floatingLabel": "Booking via WhatsApp"
+  },
+  "announcement": {
+    "enabled": true,
+    "text": "Pelajar & mahasiswa: *potong Rp 30.000* setiap Senin–Kamis sebelum pukul 15.00",
+    "href": "#produk"
+  },
+  "nav": {
+    "cta": { "label": "Booking", "href": "whatsapp" }
+  },
+  "sections": [
+    { "id": "hero", "enabled": true },
+    { "id": "trust", "enabled": true },
+    { "id": "products", "enabled": true },
+    { "id": "about", "enabled": true },
+    { "id": "benefits", "enabled": true },
+    { "id": "gallery", "enabled": false },
+    { "id": "testimonials", "enabled": true },
+    { "id": "location", "enabled": true },
+    { "id": "faq", "enabled": true },
+    { "id": "contact", "enabled": true }
+  ],
+  "hero": {
+    "navLabel": "",
+    "layout": "cover",
+    "imageShape": "kotak",
+    "eyebrow": "Barbershop pria · Bandung",
+    "title": "Potongan rapi, *percaya diri* sepanjang hari.",
+    "subtitle": "Kapster berpengalaman, alat steril untuk setiap pelanggan, dan tanpa antre lama. Booking jadwalmu lewat WhatsApp dalam satu menit.",
+    "primaryCta": { "label": "Booking via WhatsApp", "href": "whatsapp" },
+    "secondaryCta": { "label": "Lihat Harga", "href": "#produk" },
+    "rating": 5,
+    "note": "4,8 dari 500+ ulasan pelanggan (contoh)",
+    "image": "images/hero.svg",
+    "imageAlt": "Gunting, sisir, pisau cukur, dan pomade di atas meja kayu gelap",
+    "badges": [],
+    "sticker": "",
+    "stickerIcon": "scissors"
+  },
+  "trust": {
+    "navLabel": "",
+    "items": [
+      { "value": "7 tahun", "label": "Melayani pelanggan Bandung" },
+      { "value": "4 kapster", "label": "Berpengalaman & terlatih" },
+      { "value": "30 menit", "label": "Rata-rata waktu pengerjaan" },
+      { "value": "4,8 / 5", "label": "Rata-rata penilaian pelanggan" }
+    ],
+    "note": "Angka di atas adalah contoh untuk keperluan demo."
+  },
+  "about": {
+    "navLabel": "Tentang",
+    "eyebrow": "Tentang kami",
+    "title": "Bukan sekadar potong, tapi *dirawat.*",
+    "text": "Garis Rapi dibuka untuk satu tujuan: tempat pangkas yang serius soal hasil, tapi santai soal suasana. Setiap pelanggan dikonsultasikan dulu — bentuk wajah, jenis rambut, dan gaya sehari-hari — sebelum gunting menyentuh rambut.",
+    "points": [
+      "Konsultasi gaya *gratis* sebelum potong",
+      "Alat disterilkan dan handuk diganti untuk setiap pelanggan",
+      "Tidak puas? Rapikan ulang gratis dalam 3 hari"
+    ],
+    "image": "images/about.svg",
+    "imageAlt": "Kursi pangkas dan cermin di dalam Garis Rapi Barbershop",
+    "image2": "images/about-2.svg",
+    "image2Alt": "Pomade dan sisir",
+    "badgeValue": "2018",
+    "badgeLabel": "Buka sejak",
+    "ownerName": "Bayu Pratama",
+    "ownerRole": "Pemilik & kepala kapster (tokoh fiktif)",
+    "cta": { "label": "Lihat lokasi", "href": "#lokasi" }
+  },
+  "products": {
+    "navLabel": "Layanan",
+    "eyebrow": "Layanan & harga",
+    "title": "Harga jelas, *tanpa biaya tersembunyi.*",
+    "subtitle": "Semua layanan sudah termasuk cuci rambut dan styling. Ketuk Booking untuk memilih jadwal.",
+    "layout": "daftar",
+    "showFilter": true,
+    "allLabel": "Semua",
+    "showButton": true,
+    "buttonLabel": "Booking",
+    "items": [
+      { "name": "Potong Reguler", "category": "Potong", "description": "Konsultasi, potong, cuci, dan styling dengan pomade.", "price": 45000, "oldPrice": "", "unit": "", "badge": "Terlaris", "image": "" },
+      { "name": "Potong + Cukur Jenggot", "category": "Potong", "description": "Potong rambut lengkap ditambah rapikan jenggot dan kumis.", "price": 60000, "oldPrice": "", "unit": "", "badge": "", "image": "" },
+      { "name": "Potong Anak", "category": "Potong", "description": "Untuk usia di bawah 12 tahun. Kapster sabar, hasil tetap rapi.", "price": 35000, "oldPrice": "", "unit": "", "badge": "", "image": "" },
+      { "name": "Cukur Klasik", "category": "Cukur", "description": "Hot towel, cukur pisau lipat, dan aftershave.", "price": 30000, "oldPrice": "", "unit": "", "badge": "", "image": "" },
+      { "name": "Creambath Pria", "category": "Perawatan", "description": "Pijat kepala 20 menit dengan krim nutrisi, bikin rileks.", "price": 55000, "oldPrice": "", "unit": "", "badge": "", "image": "" },
+      { "name": "Semir Rambut", "category": "Perawatan", "description": "Hitam natural atau warna fashion. Harga menyesuaikan panjang rambut.", "price": "Mulai Rp 85.000", "oldPrice": "", "unit": "", "badge": "", "image": "" },
+      { "name": "Paket Gentleman", "category": "Paket", "description": "Potong, cukur klasik, creambath, dan masker wajah — sekitar 90 menit.", "price": 120000, "oldPrice": 150000, "unit": "", "badge": "Hemat", "image": "" },
+      { "name": "Home Service", "category": "Paket", "description": "Kapster datang ke rumah atau kantor. Minimal 3 orang, area Bandung kota.", "price": "Mulai Rp 75.000", "oldPrice": "", "unit": "/ orang", "badge": "", "image": "" }
+    ],
+    "note": "Butuh pangkas untuk acara, kantor, atau rombongan pengantin? Kami bisa datang ke lokasi.",
+    "cta": { "label": "Tanya paket rombongan", "href": "whatsapp:Halo {bisnis}, saya mau tanya paket rombongan / home service." }
+  },
+  "benefits": {
+    "navLabel": "Keunggulan",
+    "eyebrow": "Kenapa Garis Rapi",
+    "title": "Detail kecil yang bikin *beda.*",
+    "subtitle": "Kami percaya pelanggan kembali bukan karena promo, tapi karena pulang dengan potongan yang pas.",
+    "items": [
+      { "icon": "scissors", "title": "Kapster berpengalaman", "text": "Minimal 5 tahun jam terbang dan rutin mengikuti pelatihan gaya terbaru." },
+      { "icon": "shield", "title": "Bersih & steril", "text": "Alat disemprot disinfektan, pisau sekali pakai, handuk baru tiap pelanggan." },
+      { "icon": "calendar", "title": "Booking tanpa antre", "text": "Pilih jam lewat WhatsApp, datang, langsung duduk. Tidak perlu menunggu lama." },
+      { "icon": "wallet", "title": "Harga transparan", "text": "Semua harga tertulis jelas. Bayar tunai, QRIS, atau transfer." },
+      { "icon": "thumbs-up", "title": "Garansi rapikan ulang", "text": "Belum sreg dengan hasilnya? Datang lagi dalam 3 hari, kami rapikan gratis." },
+      { "icon": "coffee", "title": "Ruang tunggu nyaman", "text": "AC, wifi, dan kopi gratis sambil menunggu giliran." }
+    ]
+  },
+  "gallery": {
+    "navLabel": "Galeri",
+    "eyebrow": "Galeri",
+    "title": "Hasil kerja *kapster kami.*",
+    "subtitle": "",
+    "items": [
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" }
+    ],
+    "cta": { "label": "", "href": "" }
+  },
+  "testimonials": {
+    "navLabel": "Testimoni",
+    "eyebrow": "Kata pelanggan",
+    "title": "Mereka sudah *langganan.*",
+    "subtitle": "",
+    "ratingValue": "4,8",
+    "ratingLabel": "dari 500+ ulasan (contoh)",
+    "items": [
+      { "quote": "Baru kali ini ditanya dulu maunya gimana sebelum dipotong. Hasilnya *pas banget* sama bentuk muka.", "name": "Rizky H.", "role": "Karyawan swasta", "rating": 5 },
+      { "quote": "Booking jam 5 sore, datang langsung dikerjakan. Buat yang jadwalnya padat, ini penyelamat.", "name": "Andre S.", "role": "Pelanggan sejak 2021", "rating": 5 },
+      { "quote": "Anak saya biasanya rewel kalau dipangkas. Di sini kapsternya sabar, sekarang malah minta ke sini terus.", "name": "Pak Hendra", "role": "Ayah dua anak", "rating": 5 }
+    ],
+    "note": "Ulasan di atas adalah contoh fiktif untuk keperluan demo."
+  },
+  "faq": {
+    "navLabel": "FAQ",
+    "eyebrow": "Pertanyaan umum",
+    "title": "Sebelum *datang.*",
+    "subtitle": "Belum terjawab? Tanyakan langsung ke admin kami.",
+    "helpTitle": "Mau tanya dulu?",
+    "helpText": "Admin membalas setiap hari pukul 10.00 – 21.00 WIB.",
+    "cta": { "label": "Tanya via WhatsApp", "href": "whatsapp:Halo {bisnis}, saya mau tanya." },
+    "items": [
+      { "q": "Apakah harus booking dulu?", "a": "Tidak wajib, tapi sangat disarankan — terutama Jumat sore dan akhir pekan. Pelanggan yang sudah booking selalu didahulukan." },
+      { "q": "Bagaimana cara booking?", "a": "Ketuk tombol *Booking* di layanan yang diinginkan, lalu kirim pesan WhatsApp yang sudah terisi. Admin akan menawarkan jam yang tersedia." },
+      { "q": "Bisa pilih kapster tertentu?", "a": "Bisa. Sebutkan nama kapster saat booking. Jika jadwalnya penuh, kami tawarkan jam lain atau kapster lain." },
+      { "q": "Metode pembayaran apa saja?", "a": "Tunai, QRIS (semua e-wallet & m-banking), dan transfer bank. Pembayaran dilakukan setelah selesai." },
+      { "q": "Kalau terlambat dari jadwal booking?", "a": "Kami tunggu sampai 15 menit. Lewat dari itu, jadwal diberikan ke pelanggan berikutnya dan Anda kami carikan jam pengganti." }
+    ]
+  },
+  "location": {
+    "navLabel": "Lokasi",
+    "eyebrow": "Lokasi & jam buka",
+    "title": "Mampir ke *barbershop.*",
+    "subtitle": "",
+    "addressLabel": "Alamat",
+    "address": "Jl. Contoh Utama No. 45, Kel. Demo\nBandung, Jawa Barat 40000",
+    "addressNote": "Alamat fiktif. Seberang minimarket, parkir motor luas.",
+    "hoursLabel": "Jam buka",
+    "hours": [
+      { "days": "Senin – Jumat", "time": "10.00 – 21.00" },
+      { "days": "Sabtu – Minggu", "time": "09.00 – 22.00" }
+    ],
+    "hoursNote": "Booking terakhir 45 menit sebelum tutup.",
+    "showMap": true,
+    "mapQuery": "Alun-alun Bandung",
+    "mapEmbedUrl": "",
+    "mapsUrl": "",
+    "mapButtonLabel": "Tampilkan peta",
+    "cta": { "label": "Petunjuk arah", "href": "maps" },
+    "secondaryCta": { "label": "Telepon", "href": "tel" }
+  },
+  "contact": {
+    "navLabel": "Kontak",
+    "eyebrow": "Booking sekarang",
+    "title": "Rambut sudah gondrong? *Amankan jadwalmu.*",
+    "subtitle": "Kirim pesan sekarang, admin kami membalas dengan jam yang tersedia hari ini.",
+    "cta": { "label": "Booking via WhatsApp", "href": "whatsapp" },
+    "phone": "0000-0000-0000",
+    "email": "",
+    "channels": [
+      { "type": "telepon", "label": "0000-0000-0000", "url": "" },
+      { "type": "instagram", "label": "@garisrapi.demo", "url": "https://example.com/instagram-garisrapi" },
+      { "type": "tiktok", "label": "@garisrapi.demo", "url": "https://example.com/tiktok-garisrapi" }
+    ],
+    "form": {
+      "enabled": true,
+      "title": "Booking cepat",
+      "intro": "Halo {bisnis}, saya mau booking.",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama Anda",
+      "optionLabel": "Layanan",
+      "options": ["Potong Reguler", "Potong + Cukur Jenggot", "Cukur Klasik", "Paket Gentleman", "Lainnya"],
+      "messageLabel": "Hari & jam yang diinginkan",
+      "messagePlaceholder": "Contoh: Sabtu sekitar jam 4 sore",
+      "submitLabel": "Kirim via WhatsApp",
+      "note": "Form ini membuka WhatsApp dengan pesan yang sudah terisi."
+    }
+  },
+  "footer": {
+    "text": "Barbershop pria di Bandung. Potong rapi, cukur bersih, pelayanan ramah.",
+    "menuLabel": "Jelajahi",
+    "visitLabel": "Kunjungi",
+    "links": [],
+    "copyright": "Situs demo, bukan usaha sungguhan.",
+    "credit": "",
+    "creditUrl": ""
+  }
+}

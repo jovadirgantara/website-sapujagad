@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Seruni Skin — Skincare Lokal untuk Kulit Tropis (Demo)",
+    "description": "Rangkaian skincare lokal yang ringan dan lembut untuk iklim tropis. Pesan lewat WhatsApp atau marketplace, kirim ke seluruh Indonesia. Situs demo dengan data fiktif.",
+    "url": "",
+    "ogImage": "",
+    "lang": "id",
+    "noindex": true,
+    "demoNotice": "Semua nama, harga, angka, klaim, dan ulasan di halaman ini fiktif — hanya contoh tampilan."
+  },
+  "business": {
+    "name": "Seruni Skin",
+    "legalName": "Seruni Skin (usaha fiktif)",
+    "tagline": "Skincare lokal untuk kulit tropis",
+    "logo": "",
+    "hideName": false,
+    "schemaType": "HealthAndBeautyBusiness"
+  },
+  "theme": {
+    "primary": "#b0456b",
+    "accent": "#f6c9b8",
+    "background": "#fdf6f4",
+    "text": "#2b1a20",
+    "fonts": "elegan",
+    "radius": "bulat"
+  },
+  "whatsapp": {
+    "number": "620000000000",
+    "message": "Halo {bisnis}, saya mau konsultasi produk yang cocok untuk kulit saya.",
+    "productMessage": "Halo {bisnis}, saya mau pesan *{produk}* ({harga}).",
+    "floating": true,
+    "floatingLabel": "Konsultasi gratis"
+  },
+  "announcement": {
+    "enabled": true,
+    "text": "*Gratis ongkir* se-Jawa untuk pembelian di atas Rp 150.000",
+    "href": "#produk"
+  },
+  "nav": {
+    "cta": { "label": "Pesan Sekarang", "href": "whatsapp" }
+  },
+  "sections": [
+    { "id": "hero", "enabled": true },
+    { "id": "trust", "enabled": true },
+    { "id": "products", "enabled": true },
+    { "id": "benefits", "enabled": true },
+    { "id": "about", "enabled": true },
+    { "id": "gallery", "enabled": false },
+    { "id": "testimonials", "enabled": true },
+    { "id": "faq", "enabled": true },
+    { "id": "location", "enabled": false },
+    { "id": "contact", "enabled": true }
+  ],
+  "hero": {
+    "navLabel": "",
+    "layout": "center",
+    "imageShape": "kotak",
+    "eyebrow": "Skincare lokal · Dikirim dari Surabaya",
+    "title": "Kulit sehat dimulai dari yang *sederhana.*",
+    "subtitle": "Empat langkah, bahan yang jelas, dan tekstur ringan yang nyaman di cuaca panas. Bingung mulai dari mana? Konsultasi gratis lewat WhatsApp.",
+    "primaryCta": { "label": "Konsultasi via WhatsApp", "href": "whatsapp" },
+    "secondaryCta": { "label": "Lihat Produk", "href": "#produk" },
+    "rating": 5,
+    "note": "Dipercaya 2.000+ pelanggan (contoh)",
+    "image": "images/hero.svg",
+    "imageAlt": "Rangkaian produk Seruni Skin: pembersih, serum, krim, dan losion",
+    "badges": [
+      { "icon": "truck", "title": "Kirim seluruh Indonesia", "text": "Dikemas aman, 1–3 hari" },
+      { "icon": "leaf", "title": "Formula ringan", "text": "Tanpa alkohol & pewangi" }
+    ],
+    "sticker": "Lembut di kulit • Ramah di kantong •",
+    "stickerIcon": "heart"
+  },
+  "trust": {
+    "navLabel": "",
+    "items": [
+      { "value": "2.000+", "label": "Pelanggan di seluruh Indonesia" },
+      { "value": "4 langkah", "label": "Rutinitas ringkas, pagi & malam" },
+      { "value": "1–3 hari", "label": "Estimasi pengiriman Jawa" },
+      { "value": "4,9 / 5", "label": "Penilaian di marketplace" }
+    ],
+    "note": "Angka di atas adalah contoh untuk keperluan demo."
+  },
+  "about": {
+    "navLabel": "Cerita",
+    "eyebrow": "Cerita kami",
+    "title": "Dibuat karena kami juga *pernah bingung.*",
+    "text": "Seruni Skin lahir dari pengalaman pribadi: terlalu banyak produk, terlalu banyak langkah, dan kulit yang justru makin rewel. Kami menyusun rangkaian yang ringkas — cukup empat produk — dengan daftar bahan yang bisa dibaca dan dipahami siapa saja.",
+    "points": [
+      "Daftar bahan lengkap tertulis di setiap kemasan",
+      "Tekstur ringan, *cepat meresap* di cuaca lembap",
+      "Diproduksi dalam jumlah kecil agar selalu segar"
+    ],
+    "image": "images/about.svg",
+    "imageAlt": "Krim, serum, dan kelopak bunga di atas meja",
+    "image2": "images/about-2.svg",
+    "image2Alt": "Bunga seruni",
+    "badgeValue": "100%",
+    "badgeLabel": "Buatan lokal",
+    "ownerName": "Laras Ayu",
+    "ownerRole": "Pendiri Seruni Skin (tokoh fiktif)",
+    "cta": { "label": "Tanya soal bahan", "href": "whatsapp:Halo {bisnis}, saya mau tanya soal kandungan produknya." }
+  },
+  "products": {
+    "navLabel": "Produk",
+    "eyebrow": "Rangkaian produk",
+    "title": "Empat langkah, *itu saja.*",
+    "subtitle": "Pilih satuan atau ambil paket lengkapnya. Belum yakin mana yang cocok? Tanyakan dulu, gratis.",
+    "layout": "kartu",
+    "showFilter": false,
+    "allLabel": "Semua",
+    "showButton": true,
+    "buttonLabel": "Pesan",
+    "items": [
+      { "name": "Gentle Cleanser", "category": "Pembersih", "description": "Pembersih wajah berbusa lembut. Mengangkat kotoran tanpa membuat kulit terasa ketarik.", "price": 65000, "oldPrice": "", "unit": "/ 100 ml", "badge": "", "image": "images/produk-cleanser.svg" },
+      { "name": "Face Serum", "category": "Serum", "description": "Serum ringan untuk membantu kulit tampak lebih cerah dan lembap sepanjang hari.", "price": 119000, "oldPrice": "", "unit": "/ 30 ml", "badge": "Terlaris", "image": "images/produk-serum.svg" },
+      { "name": "Day Cream", "category": "Pelembap", "description": "Pelembap bertekstur gel-krim. Tidak lengket, nyaman dipakai di bawah sunscreen.", "price": 89000, "oldPrice": "", "unit": "/ 50 g", "badge": "", "image": "images/produk-cream.svg" },
+      { "name": "Body Lotion", "category": "Tubuh", "description": "Losion harian yang cepat meresap, dengan wangi lembut yang tidak menyengat.", "price": 75000, "oldPrice": "", "unit": "/ 200 ml", "badge": "Baru", "image": "images/produk-lotion.svg" },
+      { "name": "Paket Lengkap 4 Langkah", "category": "Paket", "description": "Cleanser, serum, day cream, dan body lotion dalam satu paket hemat. Cocok untuk hadiah.", "price": 295000, "oldPrice": 348000, "unit": "", "badge": "Hemat 15%", "image": "images/produk-paket.svg" },
+      { "name": "Konsultasi Kulit", "category": "Layanan", "description": "Ceritakan kondisi kulitmu lewat chat. Kami bantu susun rutinitas yang sesuai, tanpa wajib membeli.", "price": "Gratis", "oldPrice": "", "unit": "", "badge": "", "image": "images/about-2.svg" }
+    ],
+    "note": "Tersedia juga di marketplace. Harga sama, pilih yang paling nyaman untuk Anda.",
+    "cta": { "label": "Konsultasi dulu, gratis", "href": "whatsapp" }
+  },
+  "benefits": {
+    "navLabel": "Keunggulan",
+    "eyebrow": "Kenapa Seruni",
+    "title": "Sederhana, tapi *dipikirkan matang.*",
+    "subtitle": "Setiap produk dirancang untuk satu hal: nyaman dipakai setiap hari di iklim tropis.",
+    "items": [
+      { "icon": "leaf", "title": "Bahan yang jelas", "text": "Daftar kandungan lengkap di setiap kemasan dan halaman produk." },
+      { "icon": "droplet", "title": "Ringan di kulit", "text": "Tekstur gel dan losion tipis, tidak lengket walau cuaca panas." },
+      { "icon": "message", "title": "Konsultasi gratis", "text": "Ceritakan kondisi kulitmu, kami bantu pilih produk yang sesuai." },
+      { "icon": "package", "title": "Dikemas aman", "text": "Bubble wrap dan kardus tebal. Rusak di jalan? Kami kirim ulang." },
+      { "icon": "truck", "title": "Kirim cepat", "text": "Pesanan sebelum pukul 15.00 dikirim di hari yang sama." },
+      { "icon": "heart", "title": "Dibuat dalam jumlah kecil", "text": "Produksi rutin dalam batch kecil supaya produk selalu segar." }
+    ]
+  },
+  "gallery": {
+    "navLabel": "Galeri",
+    "eyebrow": "Galeri",
+    "title": "Seruni di *keseharianmu.*",
+    "subtitle": "",
+    "items": [
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" },
+      { "image": "", "caption": "" }
+    ],
+    "cta": { "label": "", "href": "" }
+  },
+  "testimonials": {
+    "navLabel": "Ulasan",
+    "eyebrow": "Ulasan pelanggan",
+    "title": "Cerita dari yang sudah *mencoba.*",
+    "subtitle": "",
+    "ratingValue": "4,9",
+    "ratingLabel": "dari 800+ ulasan marketplace (contoh)",
+    "items": [
+      { "quote": "Akhirnya ketemu pelembap yang *nggak lengket* dipakai siang hari. Sudah repeat order tiga kali.", "name": "Nadia R.", "role": "Jakarta", "rating": 5 },
+      { "quote": "Adminnya sabar banget jawab pertanyaan saya soal urutan pakai. Paketnya sampai dua hari, rapi dan aman.", "name": "Fitri A.", "role": "Semarang", "rating": 5 },
+      { "quote": "Suka karena langkahnya sedikit. Cocok buat saya yang malas ribet tapi tetap mau merawat kulit.", "name": "Dewi K.", "role": "Makassar", "rating": 5 }
+    ],
+    "note": "Ulasan di atas adalah contoh fiktif untuk keperluan demo. Hasil pemakaian tiap orang dapat berbeda."
+  },
+  "faq": {
+    "navLabel": "FAQ",
+    "eyebrow": "Pertanyaan umum",
+    "title": "Yang sering *ditanyakan.*",
+    "subtitle": "Kulit setiap orang berbeda — kalau ragu, konsultasikan dulu.",
+    "helpTitle": "Bingung pilih produk?",
+    "helpText": "Kirim foto atau ceritakan kondisi kulitmu. Kami balas setiap hari pukul 09.00 – 20.00 WIB.",
+    "cta": { "label": "Konsultasi gratis", "href": "whatsapp" },
+    "items": [
+      { "q": "Bagaimana cara memesan?", "a": "Ketuk tombol *Pesan* pada produk, lalu kirim pesan WhatsApp yang sudah terisi. Anda juga bisa memesan lewat Shopee atau Tokopedia melalui tautan di bagian kontak." },
+      { "q": "Berapa lama pengirimannya?", "a": "Pesanan sebelum pukul 15.00 dikirim di hari yang sama. Estimasi 1–3 hari untuk Jawa dan 3–6 hari untuk luar Jawa." },
+      { "q": "Apakah aman untuk kulit sensitif?", "a": "Formula kami dibuat ringan, tanpa alkohol dan pewangi tambahan. Meski begitu, kami selalu menyarankan uji tempel di belakang telinga selama 24 jam sebelum pemakaian rutin." },
+      { "q": "Bisa bayar di tempat (COD)?", "a": "Bisa, melalui marketplace. Untuk pesanan via WhatsApp, pembayaran dengan transfer bank atau QRIS." },
+      { "q": "Bagaimana jika produk rusak saat diterima?", "a": "Kirim video unboxing ke WhatsApp kami dalam 2×24 jam. Kami kirim ulang produk pengganti tanpa biaya." }
+    ]
+  },
+  "location": {
+    "navLabel": "",
+    "eyebrow": "Lokasi",
+    "title": "Alamat pengiriman",
+    "subtitle": "",
+    "addressLabel": "Alamat",
+    "address": "",
+    "addressNote": "",
+    "hoursLabel": "Jam layanan",
+    "hours": [
+      { "days": "Setiap hari", "time": "09.00 – 20.00" }
+    ],
+    "hoursNote": "",
+    "showMap": false,
+    "mapQuery": "",
+    "mapEmbedUrl": "",
+    "mapsUrl": "",
+    "mapButtonLabel": "Tampilkan peta",
+    "cta": { "label": "", "href": "maps" },
+    "secondaryCta": { "label": "", "href": "tel" }
+  },
+  "contact": {
+    "navLabel": "Kontak",
+    "eyebrow": "Mulai hari ini",
+    "title": "Kulitmu, *langkah pertamamu.*",
+    "subtitle": "Pesan langsung atau konsultasi dulu — kami bantu memilih tanpa paksaan membeli.",
+    "cta": { "label": "Chat WhatsApp Sekarang", "href": "whatsapp" },
+    "phone": "",
+    "email": "halo@seruniskin.example",
+    "channels": [
+      { "type": "shopee", "label": "Seruni Skin Official", "url": "https://example.com/shopee-seruniskin" },
+      { "type": "tokopedia", "label": "Seruni Skin", "url": "https://example.com/tokopedia-seruniskin" },
+      { "type": "instagram", "label": "@seruniskin.demo", "url": "https://example.com/instagram-seruniskin" },
+      { "type": "email", "label": "halo@seruniskin.example", "url": "" }
+    ],
+    "form": {
+      "enabled": true,
+      "title": "Konsultasi cepat",
+      "intro": "Halo {bisnis}, saya mau konsultasi.",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama Anda",
+      "optionLabel": "Jenis kulit",
+      "options": ["Berminyak", "Kering", "Kombinasi", "Sensitif", "Belum tahu"],
+      "messageLabel": "Keluhan atau pertanyaan",
+      "messagePlaceholder": "Contoh: kulit kusam dan gampang berminyak di siang hari…",
+      "submitLabel": "Kirim via WhatsApp",
+      "note": "Form ini membuka WhatsApp dengan pesan yang sudah terisi."
+    }
+  },
+  "footer": {
+    "text": "Skincare lokal yang ringkas dan lembut untuk kulit tropis.",
+    "menuLabel": "Jelajahi",
+    "visitLabel": "Layanan",
+    "links": [],
+    "copyright": "Situs demo, bukan usaha sungguhan.",
+    "credit": "",
+    "creditUrl": ""
+  }
+}

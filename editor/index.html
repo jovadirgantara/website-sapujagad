@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Editor — UMKM Landing</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23171717'/%3E%3Cpath d='M18 44V20h8l6 14 6-14h8v24' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-l">
+    <strong class="logo">UMKM<span>Landing</span></strong>
+    <label class="client"><span class="vh">Klien</span><select id="client" title="Pilih klien"></select></label>
+    <button type="button" class="b b-ghost" id="new" title="Buat klien baru dari salinan">+ Klien baru</button>
+  </div>
+  <div class="bar-c">
+    <div class="seg" role="group" aria-label="Ukuran pratinjau">
+      <button type="button" data-device="mobile" aria-pressed="false" title="HP (390 px)">HP</button>
+      <button type="button" data-device="tablet" aria-pressed="false" title="Tablet (820 px)">Tablet</button>
+      <button type="button" data-device="desktop" aria-pressed="true" title="Desktop">Desktop</button>
+    </div>
+  </div>
+  <div class="bar-r">
+    <span id="status" class="status" role="status">Memuat…</span>
+    <button type="button" class="b b-icon" id="undo" title="Urungkan (Ctrl+Z)" disabled>↶</button>
+    <button type="button" class="b b-icon" id="redo" title="Ulangi (Ctrl+Shift+Z)" disabled>↷</button>
+    <details class="more">
+      <summary class="b b-ghost">Lainnya</summary>
+      <div class="more-menu">
+        <button type="button" id="open-site">Buka pratinjau di tab baru</button>
+        <button type="button" id="export">Ekspor konfigurasi (.json)</button>
+        <button type="button" id="import">Impor konfigurasi (.json)</button>
+        <button type="button" id="revert">Batalkan semua perubahan</button>
+      </div>
+    </details>
+    <button type="button" class="b" id="save" disabled>Simpan</button>
+    <button type="button" class="b b-dark" id="build" title="Simpan lalu buat file situs siap unggah">Buat situs</button>
+  </div>
+</header>
+
+<div class="work" id="work" data-view="edit">
+  <aside class="panel" id="panel" aria-label="Pengaturan"></aside>
+  <main class="stage" id="stage" data-device="desktop">
+    <div class="frame"><iframe id="preview" title="Pratinjau situs" src="../template/preview.html"></iframe></div>
+  </main>
+</div>
+<nav class="switch" aria-label="Tampilan">
+  <button type="button" data-view="edit" aria-pressed="true">Edit</button>
+  <button type="button" data-view="preview" aria-pressed="false">Pratinjau</button>
+</nav>
+
+<input type="file" id="file-json" accept="application/json,.json" hidden>
+<dialog id="dlg" class="dlg"></dialog>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<script src="../template/render.js"></script>
+<script src="schema.js"></script>
+<script src="editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pratinjau</title>
+<!-- Cangkang pratinjau untuk editor. Menerima config lewat postMessage dan
+     hanya mengganti bagian yang berubah, supaya posisi scroll tidak melompat. -->
+<link rel="stylesheet" href="styles.css">
+<style id="theme"></style>
+<style>
+  [data-part]{display:contents}
+  [data-e]{cursor:text;outline:2px dashed transparent;outline-offset:3px;transition:outline-color .15s}
+  [data-e]:hover{outline-color:#2f6bff}
+  [data-e][contenteditable]{outline:2px solid #2f6bff;background:rgba(47,107,255,.08);-webkit-user-modify:read-write-plaintext-only}
+  [data-img]{cursor:pointer;transition:filter .15s}
+  [data-img]:hover{filter:brightness(.8) saturate(1.1);outline:3px solid #2f6bff;outline-offset:-3px}
+  #sec-tag{position:absolute;z-index:90;display:none;align-items:center;gap:6px;padding:6px 12px;border-radius:0 0 10px 0;background:#2f6bff;color:#fff;font:600 12px/1.2 system-ui,sans-serif;cursor:pointer;border:0}
+  #sec-tag:hover{background:#1d54e0}
+  .hero-text>*,.hero-visual{animation:none!important}
+  .fab{opacity:1!important;transform:none!important;pointer-events:auto!important}
+  #empty{display:grid;place-items:center;min-height:100vh;font:500 15px system-ui,sans-serif;color:#666}
+</style>
+</head>
+<body>
+<div id="root"><div id="empty">Memuat pratinjau…</div></div>
+<button type="button" id="sec-tag"></button>
+<script src="render.js"></script>
+<script src="site.js"></script>
+<script>
+(function () {
+  'use strict';
+  var root = document.getElementById('root'), tag = document.getElementById('sec-tag');
+  var cfg = null, assetBase = '', last = {}, order = '', editing = null, tagSec = null;
+  function send(m) { parent.postMessage(Object.assign({ source: 'umkm-preview' }, m), location.origin); }
+
+  function render(force) {
+    if (!cfg) return;
+    var parts = UMKM.renderParts(cfg, { assetBase: assetBase, edit: true });
+    document.getElementById('theme').textContent = UMKM.themeCss(cfg, 'fonts/');
+    document.body.className = UMKM.bodyClass(cfg);
+    document.documentElement.lang = (cfg.meta && cfg.meta.lang) || 'id';
+    var ids = parts.map(function (p) { return p.id; }).join(',');
+    if (ids !== order || force === 'all') {
+      order = ids; last = {};
+      var main = parts.slice(1, -2).map(function (p) { last[p.id] = p.html; return '<div data-part="' + p.id + '">' + p.html + '</div>'; }).join('');
+      var hd = parts[0], ft = parts[parts.length - 2], fl = parts[parts.length - 1];
+      last.header = hd.html; last.footer = ft.html; last.float = fl.html;
+      root.innerHTML = '<div id="top"></div><div data-part="header">' + hd.html + '</div><main id="main">' + main + '</main><div data-part="footer">' + ft.html + '</div><div data-part="float">' + fl.html + '</div>';
+    } else {
+      parts.forEach(function (p) {
+        if (last[p.id] === p.html && force !== p.id) return;
+        if (editing && editing.part === p.id) return; // jangan ganggu teks yang sedang diketik
+        last[p.id] = p.html;
+        var el = root.querySelector('[data-part="' + p.id + '"]');
+        if (el) el.innerHTML = p.html;
+      });
+    }
+    if (window.UMKMSite) UMKMSite.refresh();
+  }
+
+  window.addEventListener('message', function (e) {
+    if (e.origin !== location.origin || !e.data || e.data.source !== 'umkm-editor') return;
+    var m = e.data;
+    if (m.type === 'render') { cfg = m.cfg; assetBase = m.assetBase || ''; render(m.full ? 'all' : null); }
+    if (m.type === 'scroll') {
+      var s = root.querySelector('[data-sec="' + m.section + '"]');
+      if (s) window.scrollTo({ top: s.getBoundingClientRect().top + window.scrollY - (m.section === 'footer' ? 0 : 70), behavior: 'smooth' });
+      else if (m.section === 'top') window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+
+  /* --- edit teks langsung di pratinjau --- */
+  function startEdit(el) {
+    if (editing && editing.el === el) return;
+    var path = el.getAttribute('data-e'), raw = UMKM.get(cfg, path);
+    var part = el.closest('[data-part]');
+    editing = { el: el, path: path, part: part ? part.getAttribute('data-part') : null };
+    el.setAttribute('contenteditable', 'true');
+    try { el.contentEditable = 'plaintext-only'; } catch (err) { /* browser lama: tetap "true" */ }
+    el.textContent = raw == null ? '' : String(raw);
+    el.focus();
+    var r = document.createRange(); r.selectNodeContents(el); r.collapse(false);
+    var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+  }
+  function stopEdit() {
+    if (!editing) return;
+    var ed = editing; editing = null;
+    ed.el.removeAttribute('contenteditable');
+    send({ type: 'edit-done', path: ed.path });
+    render(ed.part);
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (t === tag) { send({ type: 'focus', section: tagSec }); return; }
+    var im = t.closest('[data-img]');
+    if (im) { e.preventDefault(); e.stopPropagation(); send({ type: 'pick', path: im.getAttribute('data-img') }); return; }
+    var el = t.closest('[data-e]');
+    if (el) { e.preventDefault(); e.stopPropagation(); startEdit(el); return; }
+    var a = t.closest('a');
+    if (a && a.target !== '_blank' && !/^#/.test(a.getAttribute('href') || '')) e.preventDefault();
+  }, true);
+  document.addEventListener('input', function (e) {
+    if (!editing || e.target !== editing.el) return;
+    var v = editing.el.innerText.replace(/ /g, ' ').replace(/\n+$/, '');
+    send({ type: 'edit', path: editing.path, value: v });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!editing) return;
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); editing.el.blur(); }
+    if (e.key === 'Escape') editing.el.blur();
+  });
+  document.addEventListener('focusout', function (e) { if (editing && e.target === editing.el) stopEdit(); });
+  // form di pratinjau tidak dikirim
+  document.addEventListener('submit', function (e) { e.preventDefault(); e.stopPropagation(); }, true);
+
+  /* --- label "Edit bagian" saat kursor di atas section --- */
+  document.addEventListener('mouseover', function (e) {
+    var s = e.target.closest && e.target.closest('[data-sec]');
+    if (!s || !cfg) return;
+    var key = s.getAttribute('data-sec');
+    if (key === tagSec && tag.style.display === 'flex') return;
+    tagSec = key;
+    tag.textContent = '✎ Edit: ' + (UMKM.SECTIONS[key] ? UMKM.SECTIONS[key].label : 'Footer');
+    tag.style.display = 'flex';
+    tag.style.top = (s.getBoundingClientRect().top + window.scrollY) + 'px';
+    tag.style.left = '0px';
+  });
+  document.documentElement.addEventListener('mouseleave', function () { tag.style.display = 'none'; });
+
+  send({ type: 'ready' });
+})();
+</script>
+</body>
+</html>
